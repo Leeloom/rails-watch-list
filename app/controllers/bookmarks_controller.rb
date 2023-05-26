@@ -1,5 +1,4 @@
-class bookmarksController < ActionController::Base
-
+class BookmarksController < ActionController::Base
   def index
     @bookmarks = Bookmark.all
   end
@@ -16,3 +15,4 @@ class bookmarksController < ActionController::Base
     @bookmark = Bookmark.new(params[:bookmark])
     @bookmark.save
   end
+end
